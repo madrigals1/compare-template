@@ -1,111 +1,141 @@
 * {
-    box-sizing: border-box;
-    margin: 0 auto;
-    background-color: lightgray;
+	box-sizing: border-box;
+	margin: 0 auto;
 }
 
 :root {
-    --white-bg-color: white;
-    --blue: #1890ff;
-    --green:#449d44;
-    --yellow:#fea116 ;
-  }
-
+	--white-bg-color: white;
+	--blue: #1890ff;
+	--green: #449d44;
+	--yellow: #fea116;
+}
 
 .container {
-    max-width: 1200px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	max-width: 1200px;
 }
 
 .compare-elements {
-    display: flex;
-    text-align: center;
+	display: flex;
+	text-align: center;
 }
 
-
 .compare-element {
-    min-width: 600px;
-    height: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border-radius: 5px;
+	min-width: 600px;
+	height: auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .left-element {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .right-element {
-    margin-left: 10px;
+	margin-left: 10px;
 }
 
 .compare-element-header {
-    background-color: var(--white-bg-color);
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-around;
+	background-color: var(--white-bg-color);
+	display: flex;
+	justify-content: flex-start;
 }
 
 .task-info {
-    margin-top: 50px;
-    background-color: var(--white-bg-color);
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .element-header-info {
-    font-weight: 500;
-    letter-spacing: 1px;
-    font-size: 24px;
-    background-color: var(--white-bg-color);
-    text-shadow: 1px 0px 0px #000;
-    text-align: left;
+	text-align: left;
+	margin-left: 10px;
 }
 
 .element-header-picture {
-    background-color: var(--white-bg-color);
-    padding: 10px;
+	background-color: var(--white-bg-color);
+	margin: 0px;
+	padding: 10px;
+	width: 270px;
+	height: 270px;
 }
 
-.blue {
-    color: var(--blue);
+.orange {
+	color: rgb(251, 140, 0);
 }
 
 .green {
-    color: var(--green);
+	color: rgb(67, 160, 71);
 }
 
-.yellow {
-    color: var(--yellow);
+.red {
+	color: rgb(233, 30, 99);
 }
+
 
 /* Compare element body */
 
-
 .compare-element-body {
-    padding: 15px;
-    font-weight: bold;
-    border: 1px solid gray;
-    display: flex;
-    justify-content: space-between;
-    height: auto;
+	padding: 15px;
+	font-weight: bold;
+	border-top: 2px solid lightblue;
+	border-right: 0px;
+	border-left: 0px;
+	display: flex;
+	flex-direction: row;
+	height: auto;
 }
 
-.compare-element-line {
-    float: left;
-    width: 15%;
+.compare-element-dot {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin: 0px;
 }
 
-.compare-element-body-left-side {
-    margin-left: 5px;
-    text-align: left;
-    width: 100%;
+.compare-element-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0px;
+	width: 540px;
 }
 
-.compare-element-body-right-side {
-    width: 100%;
+.compare-element-content-left {
+	margin-right: 15px;
+}
+
+.compare-element-content-right {
+	margin-left: 15px;
+}
+
+.compare-element-text {
+	margin: 0px;
+}
+
+.table {
+	width: 100%;
+	font-size: 18px;
+	margin: 8px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.table td, th {
+	height: 42px;
+}
+
+.table th {
+	text-align: left;
+}
+
+.table td {
+	text-align: right;
 }
 
 .bg-red {
-    background-color: red;
+	background-color: red;
 }
 
 .bg-green {
-    background-color: var(--green);
+	background-color: var(--green);
 }
